@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*Mobile - Tablet*/
@@ -32,6 +33,7 @@
   
   .menu .icon {
     display: none;
+    font-size: 22px;
   }
 
   .menu .icon:hover {
@@ -71,6 +73,89 @@
   /*Desktop*/
 
   @media screen and (min-width: 901px) {
+    
+    .menu a {
+      position: relative;
+      left: 75%;
+      padding-bottom: 2%;
+      
+    }
+    .menu a:hover {
+      background-color: transparent;
+      color: darkgray;
+    }
 
-   
+    /*Ids*/
+
+    #logo-menu {
+      position: fixed;
+      float: left;
+    }
+    #logo-menu a{
+      left: 0;
+      font-size: 19px;
+      padding-top: 5%;
+    }
   }
+
+  /*Monitor 1024*/
+
+  @media screen and (min-width: 1024px) {
+
+    .menu a {
+      left: 76%;
+      font-size: 19px;
+    }
+  }
+
+  /*Monitor 1280*/
+
+  @media screen and (min-width: 1280px) {
+
+    .menu a {
+      left: 80%;
+    }
+  }
+
+  /*Monitor 1366*/
+
+    @media screen and (min-width: 1366px) {
+  
+      .menu a {
+        left: 81%;
+        font-size: 20px;
+      }
+    }
+  
+    /*Monitor 1440*/
+  
+    @media screen and (min-width: 1440px) {
+  
+      .menu a {
+        left: 82%;
+      }
+
+      #logo-menu {
+        padding-top: 0.4%;
+      }
+    }
+  
+    /*Monitor 1600*/
+  
+    @media screen and (min-width: 1600px) {
+  
+      .menu a {
+        left: 83%;
+        font-size: 21.5px;
+      }
+    }
+    
+    /*Monitor 1920*/
+    
+    @media screen and (min-width: 1920px) {
+    
+      .menu a {
+        left: 87%;
+      }
+    }
+
