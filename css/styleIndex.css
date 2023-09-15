@@ -105,19 +105,3 @@
         flex-direction: row;
     }
 }
-
-/*Monitor 1024*/
-
-@media screen and (min-width: 1024px) {
-    .card-container {
-        width: 21rem;
-    }
-}
-
-/*Monitor 1280*/
-
-@media screen and (min-width: 1280px) {
-    .card-container {
-        width: 23rem;
-    }
-}
