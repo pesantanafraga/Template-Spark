@@ -1,0 +1,123 @@
+.card-container {
+    width: 22rem;
+    border: 1px solid #DDD;
+    margin: 5%;
+    background-color: rgb(236, 236, 235);
+}
+
+.card-container:hover {
+    transition: ease 0.2s;
+    box-shadow: 5px 5px 12px 5px #888888;
+}
+
+.card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 100%;
+    height: 5%;
+    margin: 5%;
+}
+
+.card-body {
+    width: 100%;
+    margin: 5%;
+}
+
+.card-body h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+
+.card-body p {
+    font-size: 16px;
+}
+
+.servicos-container {
+    width: 22rem;
+    margin: 5%;
+}
+
+.servico {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servico i {
+    margin: 2%;
+}
+
+.servico p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 3%;
+}
+
+/*Ids*/
+
+#produtos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc5c5;
+}
+
+#servicos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+}
+
+/*Responsividades*/
+
+/*Tablets*/
+
+@media screen and (min-width: 901px) {
+    .card-container {
+        width: 19rem;
+    }
+
+    .card-body h3 {
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    .card-body p {
+        font-size: 17px;
+    }
+
+    #produtos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #servicos {
+        flex-direction: row;
+    }
+}
+
+/*Monitor 1024*/
+
+@media screen and (min-width: 1024px) {
+    .card-container {
+        width: 21rem;
+    }
+}
+
+/*Monitor 1280*/
+
+@media screen and (min-width: 1280px) {
+    .card-container {
+        width: 23rem;
+    }
+}

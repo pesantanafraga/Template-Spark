@@ -76,7 +76,7 @@
     
     .menu a {
       position: relative;
-      left: 75%;
+      left: 60%;
       padding-bottom: 2%;
       
     }
@@ -88,7 +88,7 @@
     /*Ids*/
 
     #logo-menu {
-      position: fixed;
+      position: relative;
       float: left;
     }
     #logo-menu a{
@@ -103,7 +103,7 @@
   @media screen and (min-width: 1024px) {
 
     .menu a {
-      left: 76%;
+      left: 63%;
       font-size: 19px;
     }
   }
@@ -113,7 +113,7 @@
   @media screen and (min-width: 1280px) {
 
     .menu a {
-      left: 80%;
+      left: 70%;
     }
   }
 
@@ -122,7 +122,7 @@
     @media screen and (min-width: 1366px) {
   
       .menu a {
-        left: 81%;
+        left: 72%;
         font-size: 20px;
       }
     }
@@ -132,7 +132,7 @@
     @media screen and (min-width: 1440px) {
   
       .menu a {
-        left: 82%;
+        left: 73%;
       }
 
       #logo-menu {
@@ -145,7 +145,7 @@
     @media screen and (min-width: 1600px) {
   
       .menu a {
-        left: 83%;
+        left: 75%;
         font-size: 21.5px;
       }
     }
@@ -155,7 +155,7 @@
     @media screen and (min-width: 1920px) {
     
       .menu a {
-        left: 87%;
+        left: 79%;
       }
     }
 
