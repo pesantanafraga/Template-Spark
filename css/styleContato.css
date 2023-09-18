@@ -1,3 +1,6 @@
+body {
+    background: linear-gradient(#ccc5c5, #ccc);
+}
 fieldset {
     border: 1.5px solid #000;
     margin: 5%;
@@ -9,18 +12,112 @@ legend {
     font-weight: 600;
 }
 
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; 
+}
+
+input[type=submit] {
+    background-color: #128C7E;
+    color: #FFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+input[type=submit]:hover {
+    transition: ease-in 0.4s;
+    background-color: #25D366;
+}
+
 /*Classes*/
 
+.localizacao-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
 
+.localizacao-container h2 {
+    font-size: 23px;
+    font-weight: 700;
+    margin-left: 5%;
+}
+
+.localizacao-container hr {
+    border: 1.5px solid #000;
+    width: 10%;
+    margin-left: 7%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.localizacao {
+    width: 90%;
+    margin: 5%;
+}
+
+.funcionamento {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.funcionamento p {
+    font-size: 17px;
+    margin-left: 5%;
+    padding: 10px;
+}
+
+.social-container {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.social-container h2 {
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.social-container hr {
+    border: 1.5px solid #000;
+    width: 10%;
+    margin-left: 7%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.redes {
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes a img {
+    width: 50%;
+}
 
 /*Ids*/
 
 #formulario-container {
     width: 100%;
-    margin: auto 0;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    background-color: #ccc5c5;
 }
 
 #form-contato {
@@ -30,8 +127,22 @@ legend {
     flex-direction: column;
 }
 
-#form-contato input {
-    margin: 3%;
-    width: 95%;
-    font-size: 19px;
+#localizacao {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#mapa {
+    width: 100%;
+    height: 300px;
+    border-radius: 3px;
+}
+
+#redes-sociais {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
