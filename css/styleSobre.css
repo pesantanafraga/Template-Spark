@@ -1,0 +1,70 @@
+.sobre-container {
+    width: 22rem;
+    border: 1px solid #DDD;
+    margin: 5%;
+    background-color: rgb(236, 236, 235);
+}
+
+.sobre-container:hover {
+    transition: ease 0.2s;
+    box-shadow: 5px 5px 12px 5px #888888;
+}
+
+.card-sobre {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-sobre {
+    width: 100%;
+    margin: 5%;
+}
+
+.historia-empresa {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.historia-empresa hr {
+    width: 10%;
+    border: 1.5px solid #000;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.historia-empresa h2 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+/*Ids*/
+
+#sobre-empresa {
+    width: 100%;
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ccc5c5;
+}
+
+/*Responsividade*/
+
+@media screen and (min-width: 901px) {
+    .sobre-container {
+        width: 25rem;
+    }
+
+    .historia-empresa h2 {
+        font-size: 21px;
+        font-weight: 700;
+    }
+
+    .historia-empresa p {
+        font-size: 17px;
+    }
+}
