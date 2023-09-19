@@ -22,7 +22,7 @@ let transporter = nodemailer.createTransport({
   });
 
 let mailOptions = {
-    from: process.env.EMAIL_USER,
+    from: credenciais.env.EMAIL_USER,
     to: 'santanabistec@gmail.com',
     subject: assunto,
     text: 'Nome: ' + nome + '\nEmail: ' + email + '\nMensagem: ' + mensagem
