@@ -35,7 +35,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
     transition: ease-in 0.4s;
-    background-color: #226d3e;
+    background-color: #959795;
+    color: #000;
 }
 
 /*Classes*/
