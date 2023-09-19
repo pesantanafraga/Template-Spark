@@ -108,7 +108,8 @@ input[type=submit]:hover {
 }
 
 .redes a img {
-    width: 50%;
+    align-items: center;
+    margin: 0 auto;
 }
 
 /*Ids*/
@@ -145,4 +146,70 @@ input[type=submit]:hover {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+}
+
+/*Responsividades*/
+
+/*Tablet*/
+
+@media screen and (min-width: 901px) {
+    fieldset {
+        width: 80%;
+    }
+
+    input[type=submit] {
+        width: 40%;
+    }
+
+    /*Classes*/
+
+    .localizacao-container hr {
+        width: 7%;
+    }
+
+    .funcionamento hr {
+        width: 7%;
+    }
+
+    .social-container hr {
+        width: 7%;
+    }
+
+    /*Ids*/
+
+    #mapa {
+        height: 400px;
+    }
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1280px) {
+     fieldset {
+        width: 60%;
+     }
+
+     input[type=submit] {
+        width: 35%;
+     }
+
+     /*Classes*/
+
+     .localizacao-container hr {
+        width: 5%;
+    }
+
+    .funcionamento hr {
+        width: 5%;
+    }
+
+    .social-container hr {
+        width: 5%;
+    }
+
+     /*Ids*/
+
+     #mapa {
+        height: 450px;
+     }
 }
