@@ -16,11 +16,6 @@
     flex-direction: column;
 }
 
-.image-sobre {
-    width: 100%;
-    margin: 5%;
-}
-
 .historia-empresa {
     display: flex;
     flex-direction: column;
