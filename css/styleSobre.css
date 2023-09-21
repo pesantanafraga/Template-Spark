@@ -1,6 +1,7 @@
 .sobre-container {
     width: 22rem;
     border: 1px solid #DDD;
+    border-radius: 7px;
     margin: 5%;
     background-color: rgb(236, 236, 235);
 }

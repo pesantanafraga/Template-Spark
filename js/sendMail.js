@@ -9,12 +9,14 @@ app.use(bodyParser.json());
 
 app.post('/enviar-email', function(req, res) {
   let nome = req.body.nome;
-let email = req.body.email;
-let assunto = req.body.assunto;
-let mensagem = req.body.mensagem;
+  let email = req.body.email;
+  let assunto = req.body.assunto;
+  let mensagem = req.body.mensagem;
 
 let transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: 'smpt.gmail.com',
+    port: 587,
+    secure: false, // true somente para port 465 as outras são false
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS
@@ -22,7 +24,7 @@ let transporter = nodemailer.createTransport({
   });
 
 let mailOptions = {
-    from: credenciais.env.EMAIL_USER,
+    from: process.env.EMAIL_USER,
     to: 'santanabistec@gmail.com',
     subject: assunto,
     text: 'Nome: ' + nome + '\nEmail: ' + email + '\nMensagem: ' + mensagem

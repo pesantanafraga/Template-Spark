@@ -1,29 +1,39 @@
-//Configuração para envio do e-mail
-document.getElementById('form-contato').addEventListener('submit', function(event) {
-    event.preventDefault();
+//Configuração para envio do e-mail ao servidor node.js
+
+document.getElementById('form-contato').addEventListener('submit', function (event) {
+  event.preventDefault(); // Evita o comportamento padrão do envio do formulário.
   
-    var nome = document.getElementById('nome').value;
-    var email = document.getElementById('email').value;
-    var assunto = document.getElementById('assunto').value;
-    var mensagem = document.getElementById('mensagem').value;
-  
-    fetch('/enviar-email', {
+  const nome = document.getElementById('nome').value;
+  const email = document.getElementById('email').value;
+  const assunto = document.getElementById('assunto').value;
+  const mensagem = document.getElementById('mensagem').value;
+
+  const dadosFormulario = {
+      nome: nome,
+      email: email,
+      assunto: assunto,
+      mensagem: mensagem
+  };
+
+  fetch('/enviar-dados', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ nome: nome, email: email, assunto: assunto, mensagem: mensagem }),
-    })
-    .then(response => response.text())
-    .then(data => alert(data))
-    .catch((error) => {
-      console.error('Error:', error);
-    });
+      body: JSON.stringify(dadosFormulario)
+  })
+  .then(response => response.text())
+  .then(data => {
+      alert(data); // Exibe a resposta do servidor.
+  })
+  .catch(error => {
+      console.error('Erro:', error);
   });
+});
+
   
 
-
-//Validação de formulário de e-mail
+//Validação dos campos do formulário
 
 function validaFormulario() {
     let nome = document.forms["formularioContato"]["nome"].value;
